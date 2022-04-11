@@ -6,5 +6,9 @@ export default defineNuxtConfig({
     '@/assets/fonts/fonts.scss',
     '@/assets/styles/main.scss',
     '@/assets/styles/reset.scss'
-  ]
+  ],
+  modules: ['@nuxtjs/prismic'],
+  prismic: {
+      endpoint: 'https://wotprod.cdn.prismic.io/api/v2'
+  },
 })
